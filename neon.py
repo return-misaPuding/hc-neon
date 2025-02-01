@@ -54,7 +54,7 @@ def decideday(inputdate):
         case _:
             dayclr = 0xFFAA00 #orange
 def blink(timeless):
-    if (int(timeless.strftime("%S")) % 3 == 0):
+    if (int(timeless.strftime("%S"))*2 % 3 == 0):
         return 0
     else:
         return 1
